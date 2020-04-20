@@ -14,7 +14,7 @@ body{
 .container{
     margin: 0;
     padding: 0;
-    /* background-color: #1C1C1E; */
+   
 }
 
 a{
@@ -31,11 +31,19 @@ li{
         Styling the Navbar 
 =================================*/
 .navbar{
+    position: fixed;
+    top:0;
+    right:0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
+    width: 100vw;
     padding: 0 1em 0 1em;
+}
+
+.logo{
+    z-index: 2;
 }
 
 /* Styling the burger icon
@@ -44,8 +52,8 @@ li{
     position: absolute;
     top: 0;
     right: 0;
-    height: 3em;
-    width: 3em;
+    height: 3.2em;
+    width: 3.2em;
     z-index: 2;
     opacity: 0; 
 }
@@ -57,7 +65,64 @@ li{
     z-index: 1;
     height: 3em;
     width: 3em;
+    padding: .5em;
 }
+
+.burger-icon .close{
+    display: none;
+}
+
+/* Fixing the link container 
+=============================*/
+.link-container div{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 10vh;
+    right: -100vw;
+    padding: 3em;
+    z-index: 1;
+    transition: 0.5s ease;
+    background-color: rgba(2, 129, 116, 0.9);
+}
+
+/* Show the menu when checked */
+.burger-toggle:checked ~ .link-container div{
+    right:0;
+    transition: all 0.5s ease;
+}
+
+/* Change the icon when the menu is showing */
+.burger-toggle:checked ~ .burger-icon .close{
+    transition: 0.5s ease; 
+    display: block;
+}
+
+.burger-toggle:checked ~ .burger-icon .burger{
+    display: none;
+    transition: 0.5s ease;
+}
+
+/* Styling the page links */
+.page-links li{
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+.page-links li a{
+    color: #FFE3B3;
+}
+
+
+/* =======================
+    Styling home page
+====================== */
+
+main{
+    position: relative;
+    top: 10vh
+}
+
 
 
 
