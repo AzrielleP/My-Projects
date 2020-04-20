@@ -10,6 +10,8 @@
     <link rel = "stylesheet" href = "style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/238576f8e6.js" crossorigin="anonymous"></script>
+
     <title>
         Website Title
     </title>
@@ -26,32 +28,46 @@
             <!-- Logo -->
             <a href = "" class = "logo">Logo</a>
 
+            <!-- Menu Container -->
+            <div class="menu-container">
+
+            <!-- Hamburger Menu Icon-->
+            <input type = "checkbox" class = "burger-toggle">
+
+            <div class="burger-icon">
+                <img src = "bars-solid.svg"
+                alt = "hamburger icon">
+            </div>
+
             <!-- Page Links -->
             <div class="link-container">
-                <ul class = "page-links">
-                    <li>
-                        <a href = "">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href ="">About Me</a>
-                    </li>
-                    <li>
-                        <a href ="">Contact</a>
-                    </li>
-                    <li>
-                        <a href ="">Resume</a>
-                    </li>
-                </ul>
+                <div>
+                    <ul class = "page-links">
+                        <li>
+                            <a href = "#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href ="#about-me">About Me</a>
+                        </li>
+                        <li>
+                            <a href ="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href ="">Resume</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
         </header>
 
         <main>
-            <div class="introduction">
+            <div id="introduction">
                 <h1>Hello, I'm Aze</h1>
                 <h2>Web Developer</h2>
             </div>
 
-            <article class = "portfolio">
+            <article id = "portfolio">
                 <div class="project-container">
 
                 </div>
@@ -62,11 +78,11 @@
 
             </article>
 
-            <article class ="about-me">
+            <article id ="about-me">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim doloribus et voluptate id expedita veritatis eaque consectetur nemo dolor, repudiandae quod ullam facere modi nesciunt? Excepturi vitae reiciendis accusantium commodi!</p>
             </article>
 
-            <article class = "contact">
+            <article id = "contact">
                 <h3>Need help on your website? Contact me!</h3>
 
                 <form class = "contact-form">
