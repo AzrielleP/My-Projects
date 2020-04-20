@@ -51,15 +51,19 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 60px;
     width: 100vw;
-    padding: 1em;
+    padding: 1.5rem;
     background-color: #FFF;
     z-index: 1;
 }
 
 .logo{
     z-index: 2;
+    background: url(logo.png) no-repeat center center/cover;
+    display: inline-block;
+    height: 50px;
+    width: 80px;
 }
 
 /* Styling the burger icon
@@ -196,7 +200,6 @@ main{
 ===========================*/
 .contact{
     background-color: #0AB68B;
-    border-radius: 20px;
     margin-top: 2em;
     padding: 1em;
 }
