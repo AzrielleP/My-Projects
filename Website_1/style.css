@@ -7,7 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Barlow', sans-serif;
+    font: 5vw 'Barlow', sans-serif;
     line-height: 1.5;
     scroll-behavior: smooth;
 }
@@ -15,7 +15,6 @@ body{
 .container{
     margin: 0;
     padding: 0;
-   
 }
 
 a{
@@ -38,6 +37,7 @@ h2{
     font: lighter 14vw 'Barlow Semi Condensed', sans-serif;
     color: #92DE8B;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 
@@ -53,7 +53,7 @@ h2{
     justify-content: space-between;
     height: 10vh;
     width: 100vw;
-    padding: 0 1em 0 1em;
+    padding: 1em;
     background-color: #FFF;
     z-index: 1;
 }
@@ -108,12 +108,12 @@ h2{
 /* Show the menu when checked */
 .burger-toggle:checked ~ .link-container div{
     right:0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 /* Change the icon when the menu is showing */
 .burger-toggle:checked ~ .burger-icon .close{
-    transition: 0.5s ease; 
+    transition: 0.4s ease; 
     display: block;
 }
 
@@ -143,6 +143,10 @@ h2{
     Styling home page
 ====================== */
 
+main{
+    padding: 1.5rem;
+    z-index: 1;
+}
 
 .intro{
     height: 100vh;
@@ -165,15 +169,108 @@ h2{
     color: #0AB68B;
 }
 
-.intro, .portfolio, .about{
-    padding: 2rem;
+/* Solve the offset issue when a tag appears beneath the navbar after clicking the link */
+#portfolio,
+#about-me,
+#contact {
+    position: relative;
+    border-top: 52px solid transparent;
+    margin: -30px 0 0;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
 }
+
+#portfolio:before,
+#about-me:before,
+#contact:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+ }
+
 
 /* Styling the contact part
 ===========================*/
 .contact{
     background-color: #0AB68B;
+    border-radius: 20px;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.contact h2{
+    color: #FFE3B3;
+}
+
+.contact h3{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* Styling the form 
+====================*/
+.contact-form label{
+    display: block;
+}
+
+.contact-form input{
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    font-family: 'Barlow', sans-serif;
+    border: 1px solid #028174;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 1em;
+}
+
+.contact-form textarea{
+    width: 100%;
+    height: 10em;
+    padding: 1em;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 4px;
+    overflow: auto;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .submit-button{
+    height: 3em;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 4px;
+    border: none;
+    padding: 1em;
+    background-color: #028174;
+    color: #FFF;
+}
+
+.contact-form input:invalid, .contact-form textarea:invalid{
+    border: 2px solid rgb(233, 185, 81);
 }
 
 
+/* ============ 
+Styling the footer
+================*/
+footer{
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: .9em;
+    padding: 2em;
+}
 
+footer a, footer a:visited{
+    color: #0AB68B
+}
+
+footer a:active{
+    color: #028174;
+}
