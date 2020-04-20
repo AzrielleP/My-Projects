@@ -7,8 +7,9 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -26,6 +27,19 @@ li{
     list-style-type: none;
 }
 
+h1{
+    font: bold 20vw 'Barlow Semi Condensed', sans-serif;
+    color: #028174;
+    text-transform: uppercase;
+    
+}
+
+h2{
+    font: lighter 14vw 'Barlow Semi Condensed', sans-serif;
+    color: #92DE8B;
+    text-transform: uppercase;
+}
+
 
 /* ===============================
         Styling the Navbar 
@@ -40,6 +54,8 @@ li{
     height: 10vh;
     width: 100vw;
     padding: 0 1em 0 1em;
+    background-color: #FFF;
+    z-index: 1;
 }
 
 .logo{
@@ -54,7 +70,7 @@ li{
     right: 0;
     height: 3.2em;
     width: 3.2em;
-    z-index: 2;
+    z-index: 3;
     opacity: 0; 
 }
 
@@ -62,7 +78,7 @@ li{
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
     height: 3em;
     width: 3em;
     padding: .5em;
@@ -77,13 +93,16 @@ li{
 .link-container div{
     position: absolute;
     height: 100vh;
-    width: 100vw;
-    top: 10vh;
+    width: 50vw;
+    top: 0;
     right: -100vw;
-    padding: 3em;
+    padding: 1em;
     z-index: 1;
     transition: 0.5s ease;
-    background-color: rgba(2, 129, 116, 0.9);
+    background-color: rgba(2, 129, 116, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Show the menu when checked */
@@ -106,11 +125,17 @@ li{
 /* Styling the page links */
 .page-links li{
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 4vh;
 }
 
 .page-links li a{
     color: #FFE3B3;
+    font-weight: lighter;
+}
+
+.page-links li a:active{
+    color: #028174;
+    transition: 0.2s ease;
 }
 
 
@@ -118,11 +143,37 @@ li{
     Styling home page
 ====================== */
 
-main{
-    position: relative;
-    top: 10vh
+
+.intro{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
 }
 
+.intro p{
+    padding-top: 1em;
+    text-align: center;
+    border-top: 2px solid #028174;
+}
+
+.intro p span{
+    color: #0AB68B;
+}
+
+.intro, .portfolio, .about{
+    padding: 2rem;
+}
+
+/* Styling the contact part
+===========================*/
+.contact{
+    background-color: #0AB68B;
+}
 
 
 
