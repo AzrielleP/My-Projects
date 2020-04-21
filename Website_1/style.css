@@ -1,85 +1,85 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font: 16px 'Barlow', sans-serif;
-    color: #FFF;
-    line-height: 1.5;
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px "Barlow", sans-serif;
+  color: #fff;
+  line-height: 1.5;
 }
 
-.container{
-    margin: 0;
-    padding: 0;
+.container {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    -webkit-tap-highlight-color: transparent;
-    text-decoration: none;
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-h1{
-    font: bold 4em 'Barlow Semi Condensed', sans-serif;
-    color: #FFF;
-    text-transform: uppercase;
-    padding-bottom: 0.5em;
-    
+h1 {
+  font: bold 4em "Barlow Semi Condensed", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
 }
 
-h2{
-    font: bold 2em 'Barlow Semi Condensed', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: #872E3F;
+h2 {
+  font: bold 2em "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #872e3f;
 }
-
 
 /* ===============================
         Styling the Navbar 
 =================================*/
-.navbar{
-    position: fixed;
-    top:0;
-    right:0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    width: 100vw;
-    padding: 1.5rem;
-    background-color: rgba(3,20,36,0.9);
-    z-index: 1;
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100vw;
+  padding: 1.5rem;
+  background-color: rgba(3, 20, 36, 0.9);
+  z-index: 1;
 }
 
-.logo{
-    z-index: 2;
-    background: url(logo.png) no-repeat center center/cover;
-    display: inline-block;
-    height: 50px;
-    width: 80px;
+.logo {
+  z-index: 2;
+  background: url(logo.png) no-repeat center center/cover;
+  display: inline-block;
+  height: 50px;
+  width: 80px;
 }
 
-/* Styling the burger icon
+/* Only show this for small screens */
+@media screen and (max-width: 499px) {
+  /* Styling the burger icon
 ============================ */
-.burger-toggle{
+  .burger-toggle {
     position: absolute;
     top: 0;
     right: 0;
     height: 3.2em;
     width: 3.2em;
     z-index: 3;
-    opacity: 0; 
-}
+    opacity: 0;
+  }
 
-.burger-icon{
+  .burger-icon {
     position: absolute;
     top: 0;
     right: 0;
@@ -87,15 +87,15 @@ h2{
     height: 3em;
     width: 3em;
     padding: 0.5em;
-}
+  }
 
-.burger-icon .close{
+  .burger-icon .close {
     display: none;
-}
+  }
 
-/* Fixing the link container 
+  /* Fixing the link container 
 =============================*/
-.link-container div{
+  .link-container div {
     position: absolute;
     height: 100vh;
     width: 50vw;
@@ -104,179 +104,231 @@ h2{
     padding: 1em;
     z-index: 1;
     transition: 0.5s ease;
-    background-color: rgba(10,21,41,0.8);
+    background-color: rgba(10, 21, 41, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-/* Show the menu when checked */
-.burger-toggle:checked ~ .link-container div{
-    right:0;
+  /* Show the menu when checked */
+  .burger-toggle:checked ~ .link-container div {
+    right: 0;
     transition: all 0.3s ease;
-}
+  }
 
-/* Change the icon when the menu is showing */
-.burger-toggle:checked ~ .burger-icon .close{
-    transition: 0.4s ease; 
+  /* Change the icon when the menu is showing */
+  .burger-toggle:checked ~ .burger-icon .close {
+    transition: 0.4s ease;
     display: inline-block;
-}
+  }
 
-.burger-toggle:checked ~ .burger-icon .burger{
+  .burger-toggle:checked ~ .burger-icon .burger {
     display: none;
     transition: 0.5s ease;
-}
+  }
 
-/* Styling the page links */
-.page-links li{
+  /* Styling the page links */
+  .page-links li {
     padding: 0.5em;
     font-size: 4vh;
-}
+  }
 
-.page-links li a{
-    color: #FFF;
+  .page-links li a {
+    color: #fff;
     font-weight: lighter;
-}
+  }
 
-.page-links li a:active{
-    color: #028174;
+  .page-links li a:active {
+    color: #566d77;
     transition: 0.2s ease;
+  }
 }
-
-
 /* =======================
     Styling home page
 ====================== */
 
-.intro{
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1.5rem;
-    
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf6766+0,cf6766+51,30415d+51,39415d+100 */
-    background:url(background.jpg) center center/cover;
+.intro {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
 
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf6766+0,cf6766+51,30415d+51,39415d+100 */
+  background: url(background.jpg) center center/cover;
 }
 
-.intro p{
-    text-align: center;
+.intro p {
+  text-align: center;
 }
 
-.intro p span{
-    color: #8EAEBD;
+.intro p span {
+  color: #8eaebd;
 }
 
 /* Solve the offset issue when a tag appears beneath the navbar after clicking the link */
 .portfolio,
 .about,
 .contact {
-    position: relative;
-    border-top: 52px solid #000;
-    margin: -30px 0 0;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
+  position: relative;
+  z-index: -2;
+  border-top: 52px solid #000;
+  margin: -30px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }
 
 .portfolio:before,
 .about:before,
 .contact:before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 0;
-    right: 0;
- }
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+}
 
- .portfolio, .about{
-     background-color: #000;
-     padding: 1.5rem;
- }
+.portfolio,
+.about {
+  background-color: #000;
+  padding: 1.5rem;
+}
 
-
- .about h2, .about p{
-     color: #8EAEBD;
- }
+.about h2,
+.about p {
+  color: #8eaebd;
+}
 
 /* Styling the contact part
 ===========================*/
-.contact{
-    background-color: #FFF;
-    padding: 1.5rem;
+.contact {
+  background-color: #fff;
+  padding: 1.5rem;
 }
- 
-.contact h3{
-    color: #000;
-    margin-bottom: 1em;
+
+.contact h3 {
+  color: #000;
+  margin-bottom: 1em;
 }
 
 /* Styling the form 
 ====================*/
-.contact-form label{
-    display: block;
-    color: #000;
+.contact-form label {
+  display: block;
+  color: #000;
 }
 
-.contact-form input{
-    width: 100%;
-    height: 3em;
-    padding: 1em;
-    font-family: 'Barlow', sans-serif;
-    border: 1px solid #031424;
-    border-radius: 4px;
-    margin-bottom: 1em;
+.contact-form input {
+  width: 100%;
+  height: 3em;
+  padding: 1em;
+  font-family: "Barlow", sans-serif;
+  border: 1px solid #031424;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  outline: none;
 }
 
-.contact-form textarea{
-    width: 100%;
-    height: 10em;
-    padding: 1em;
-    font-family: 'Barlow', sans-serif;
-    border-radius: 4px;
-    overflow: auto;
-    outline: none;
-    resize: none;
+.contact-form textarea {
+  width: 100%;
+  height: 10em;
+  padding: 1em;
+  font-family: "Barlow", sans-serif;
+  border-radius: 4px;
+  overflow: auto;
+  outline: none;
+  resize: none;
 }
 
-.contact-form .submit-button{
-    height: 3em;
-    font-family: 'Barlow', sans-serif;
-    border-radius: 4px;
-    border: none;
-    padding: 1em;
-    background-color: #8eaebd;
-    color: #031424;
-    font-weight: bolder;
-    margin-top: 1em;
+.contact-form .submit-button {
+  height: 3em;
+  font-family: "Barlow", sans-serif;
+  border-radius: 4px;
+  border: none;
+  padding: 1em;
+  background-color: #8eaebd;
+  color: #031424;
+  font-weight: bolder;
+  margin-top: 1em;
 }
 
-.contact-form input:invalid, .contact-form textarea:invalid{
-    border: 2px solid #872E3F;
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border: 2px solid #872e3f;
 }
-
 
 /* ============ 
 Styling the footer
 ================*/
-footer{
-    background-color: rgb(3,20,36);
+footer {
+  background-color: rgb(3, 20, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1.5em;
+}
+
+footer a,
+footer a:visited {
+  color: #8eaebd;
+}
+
+footer a:active {
+  color: #6b838f;
+}
+
+/* ======================
+For screens larger than 400px
+========================== */
+
+@media screen and (min-width: 500px) {
+  /* Hide the burger navbar */
+  .burger-icon,
+  .burger-toggle {
+    display: none;
+  }
+
+  /* Fixing the navbar */
+
+  .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    text-align: center;
-    font-size: .9em;
-    padding: 1.5em;
-}
+    justify-content: space-between;
+  }
 
-footer a, footer a:visited{
-    color: #8EAEBD;
-}
+  .link-container div ul {
+    display: flex;
+    align-items: center;
+  }
 
-footer a:active{
-    color: #6b838f;
+  .link-container div li {
+    padding: 1em;
+  }
+
+  .link-container div a,
+  .link-container div a:visited {
+    color: #8eaebd;
+  }
+
+  .link-container div a:hover {
+    color: #fff;
+  }
+
+  .link-container div a:active {
+    color: #566d77;
+  }
+
+  /* Fixing the padding on main */
+  .portfolio,
+  .about,
+  .contact {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
 }
