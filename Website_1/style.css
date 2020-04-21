@@ -7,7 +7,7 @@
 body{
     margin: 0;
     padding: 0;
-    font: 5vw 'Barlow', sans-serif;
+    font: 16px 'Barlow', sans-serif;
     line-height: 1.5;
     scroll-behavior: smooth;
 }
@@ -27,14 +27,15 @@ li{
 }
 
 h1{
-    font: bold 20vw 'Barlow Semi Condensed', sans-serif;
+    font: bold 4em 'Barlow Semi Condensed', sans-serif;
     color: #028174;
     text-transform: uppercase;
+    padding-bottom: 0.5em;
     
 }
 
 h2{
-    font: lighter 14vw 'Barlow Semi Condensed', sans-serif;
+    font: lighter 2em 'Barlow Semi Condensed', sans-serif;
     color: #92DE8B;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -99,7 +100,7 @@ h2{
     height: 100vh;
     width: 50vw;
     top: 0;
-    right: -100vw;
+    right: -50vw;
     padding: 1em;
     z-index: 1;
     transition: 0.5s ease;
@@ -118,7 +119,7 @@ h2{
 /* Change the icon when the menu is showing */
 .burger-toggle:checked ~ .burger-icon .close{
     transition: 0.4s ease; 
-    display: block;
+    display: inline-block;
 }
 
 .burger-toggle:checked ~ .burger-icon .burger{
@@ -164,9 +165,7 @@ main{
 }
 
 .intro p{
-    padding-top: 1em;
     text-align: center;
-    border-top: 2px solid #028174;
 }
 
 .intro p span{
@@ -267,7 +266,7 @@ footer{
     flex-flow: column wrap;
     text-align: center;
     font-size: .9em;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 footer a, footer a:visited{

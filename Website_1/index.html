@@ -8,8 +8,11 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
     <link rel = "stylesheet" href = "style.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow%7CBarlow+Semi+Condensed&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/238576f8e6.js" crossorigin="anonymous"></script>
+
+    <!-- Changing the color of the SVG icon -->
     <style>
     .burger{
         color:#0AB68B;
@@ -20,7 +23,6 @@
     }
     </style>
 
-    <script src="https://kit.fontawesome.com/238576f8e6.js" crossorigin="anonymous"></script>
 
     <title>
         Website Title
@@ -38,7 +40,7 @@
             <!-- Logo -->
             <a href = "#top" class = "logo"></a>
 
-            <!-- Hamburger Menu Icon-->
+            <!-- Hamburger Menu Icons-->
             <input type = "checkbox" class = "burger-toggle">
 
             <div class="burger-icon">
@@ -67,15 +69,14 @@
                     </ul>
                 </div>
             </div>
-        </div>
         </header>
 
         <main>
+
             <div id="introduction" class ="intro">
                 <h1>Kamusta?</h1>
-                <p>My name is Azrielle Pelayo. 
-                    <br/>
-                    I'm a <span>front-end web developer</span> based in the Philippines.</p>
+                <p>My name is Azrielle Pelayo. </p>
+                <p>I'm a <span>front-end web developer</span> based in the Philippines.</p>
             </div>
 
             <article id = "portfolio" class = "portfolio">
@@ -102,41 +103,48 @@
                 <h3>Need help on your website? Contact me!</h3>
 
                 <form class = "contact-form" method = "post" action="mailto:sample_email@sample.com">
+
                     <ul>
+
                         <li>
-                            <div id = "name">
+                            <div>
                                 <label for ="name">
                                     Name
-                                    <strong>*</strong>
-                                </label>
-                                <input type = "text" id = "name" name ="name" required placeholder = "First Name and Last Name">
+                                    <strong>*</strong>   
+                                </label>  
+                                <input type = "text" id = "name" name ="name" required placeholder = "First Name and Last Name">  
                             </div>
                         </li>
+
                         <li>
-                            <div id = "email">
+                            <div>
                                 <label for ="email">
                                     Email
-                                    <strong>*</strong>
+                                    <strong>*</strong> 
                                 </label>
                                 <input type = "email" id = "email" name ="email" required placeholder = "Enter your Email Address">
                             </div>
                         </li>
+
                         <li>
-                            <div id = "message">
+                            <div>
                                 <label for ="message">
                                     Message
                                     <strong>*</strong>
-                                </label>
-                                <textarea id = "message" name ="requester-message" required placeholder="Type your message"></textarea>
+                                    </label> 
+                                <textarea id = "message" name ="message" required placeholder="Type your message"></textarea>
                             </div>
                         </li>
+
                     </ul>
+
                     <button type = "submit" class="submit-button">Submit</button>
                 </form>
             </article>
         </main>
         
         <footer>
+
             <p>
                 <a href = "https://github.com/AzrielleP">Github</a>
             </p>
