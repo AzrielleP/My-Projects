@@ -8,8 +8,8 @@ body{
     margin: 0;
     padding: 0;
     font: 16px 'Barlow', sans-serif;
+    color: #FFF;
     line-height: 1.5;
-    scroll-behavior: smooth;
 }
 
 .container{
@@ -28,17 +28,17 @@ li{
 
 h1{
     font: bold 4em 'Barlow Semi Condensed', sans-serif;
-    color: #028174;
+    color: #FFF;
     text-transform: uppercase;
     padding-bottom: 0.5em;
     
 }
 
 h2{
-    font: lighter 2em 'Barlow Semi Condensed', sans-serif;
-    color: #92DE8B;
+    font: bold 2em 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    color: #872E3F;
 }
 
 
@@ -55,7 +55,7 @@ h2{
     height: 60px;
     width: 100vw;
     padding: 1.5rem;
-    background-color: #FFF;
+    background-color: rgba(3,20,36,0.9);
     z-index: 1;
 }
 
@@ -86,7 +86,7 @@ h2{
     z-index: 2;
     height: 3em;
     width: 3em;
-    padding: .5em;
+    padding: 0.5em;
 }
 
 .burger-icon .close{
@@ -104,7 +104,7 @@ h2{
     padding: 1em;
     z-index: 1;
     transition: 0.5s ease;
-    background-color: rgba(2, 129, 116, 0.8);
+    background-color: rgba(10,21,41,0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +134,7 @@ h2{
 }
 
 .page-links li a{
-    color: #FFE3B3;
+    color: #FFF;
     font-weight: lighter;
 }
 
@@ -148,11 +148,6 @@ h2{
     Styling home page
 ====================== */
 
-main{
-    padding: 1.5rem;
-    z-index: 1;
-}
-
 .intro{
     height: 100vh;
     margin: auto;
@@ -160,7 +155,10 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    padding: 1.5rem;
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cf6766+0,cf6766+51,30415d+51,39415d+100 */
+    background:url(background.jpg) center center/cover;
 
 }
 
@@ -169,24 +167,24 @@ main{
 }
 
 .intro p span{
-    color: #0AB68B;
+    color: #8EAEBD;
 }
 
 /* Solve the offset issue when a tag appears beneath the navbar after clicking the link */
-#portfolio,
-#about-me,
-#contact {
+.portfolio,
+.about,
+.contact {
     position: relative;
-    border-top: 52px solid transparent;
+    border-top: 52px solid #000;
     margin: -30px 0 0;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
 
-#portfolio:before,
-#about-me:before,
-#contact:before {
+.portfolio:before,
+.about:before,
+.contact:before {
     content: "";
     position: absolute;
     top: -2px;
@@ -194,28 +192,33 @@ main{
     right: 0;
  }
 
+ .portfolio, .about{
+     background-color: #000;
+     padding: 1.5rem;
+ }
+
+
+ .about h2, .about p{
+     color: #8EAEBD;
+ }
 
 /* Styling the contact part
 ===========================*/
 .contact{
-    background-color: #0AB68B;
-    margin-top: 2em;
-    padding: 1em;
+    background-color: #FFF;
+    padding: 1.5rem;
 }
-
-.contact h2{
-    color: #FFE3B3;
-}
-
+ 
 .contact h3{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    margin-bottom: 1rem;
+    color: #000;
+    margin-bottom: 1em;
 }
 
 /* Styling the form 
 ====================*/
 .contact-form label{
     display: block;
+    color: #000;
 }
 
 .contact-form input{
@@ -223,9 +226,8 @@ main{
     height: 3em;
     padding: 1em;
     font-family: 'Barlow', sans-serif;
-    border: 1px solid #028174;
+    border: 1px solid #031424;
     border-radius: 4px;
-    outline: none;
     margin-bottom: 1em;
 }
 
@@ -246,12 +248,14 @@ main{
     border-radius: 4px;
     border: none;
     padding: 1em;
-    background-color: #028174;
-    color: #FFF;
+    background-color: #8eaebd;
+    color: #031424;
+    font-weight: bolder;
+    margin-top: 1em;
 }
 
 .contact-form input:invalid, .contact-form textarea:invalid{
-    border: 2px solid rgb(233, 185, 81);
+    border: 2px solid #872E3F;
 }
 
 
@@ -259,7 +263,7 @@ main{
 Styling the footer
 ================*/
 footer{
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(3,20,36);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,9 +274,9 @@ footer{
 }
 
 footer a, footer a:visited{
-    color: #0AB68B
+    color: #8EAEBD;
 }
 
 footer a:active{
-    color: #028174;
+    color: #6b838f;
 }
