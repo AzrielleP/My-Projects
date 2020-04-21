@@ -173,9 +173,7 @@ h2 {
 .about,
 .contact {
   position: relative;
-  z-index: -2;
-  border-top: 52px solid #000;
-  margin: -30px 0 0;
+  border-top: 30px solid #000;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -226,7 +224,7 @@ h2 {
   height: 3em;
   padding: 1em;
   font-family: "Barlow", sans-serif;
-  border: 1px solid #031424;
+  border: 1px solid #47515c;
   border-radius: 4px;
   margin-bottom: 1em;
   outline: none;
@@ -237,6 +235,7 @@ h2 {
   height: 10em;
   padding: 1em;
   font-family: "Barlow", sans-serif;
+  border: 1px solid #47515c;
   border-radius: 4px;
   overflow: auto;
   outline: none;
@@ -335,5 +334,13 @@ For screens larger than 400px
   /* Fixing the contact form inputs */
   .contact input, .contact textarea{
       width: 70%;
+  }
+
+  .submit-button:hover{
+    background-color: #872e3f;
+  }
+
+  .submit-button:focus{
+      outline: none;
   }
 }
