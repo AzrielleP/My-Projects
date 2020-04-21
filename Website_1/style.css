@@ -338,6 +338,7 @@ For screens larger than 400px
 
   .submit-button:hover{
     background-color: #872e3f;
+    color: #FFF;
   }
 
   .submit-button:focus{
