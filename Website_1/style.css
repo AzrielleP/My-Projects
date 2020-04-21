@@ -205,7 +205,7 @@ h2 {
 /* Styling the contact part
 ===========================*/
 .contact {
-  background-color: #fff;
+  background-color: #FFF;
   padding: 1.5rem;
 }
 
@@ -330,5 +330,10 @@ For screens larger than 400px
   .contact {
     padding-left: 20vw;
     padding-right: 20vw;
+  }
+
+  /* Fixing the contact form inputs */
+  .contact input, .contact textarea{
+      width: 70%;
   }
 }
