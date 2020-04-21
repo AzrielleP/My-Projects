@@ -2,8 +2,11 @@
 
 <html lang="en">
   <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name = "author" content = "Azrielle Pelayo">
+    <meta name = "description" content = "Azrielle Pelayo - Front-End Web Developer">
 
     <link rel="stylesheet" href="style.css" />
     <link
@@ -25,14 +28,14 @@
     </style>
 
     <title>
-      Website Title
+      azrielle | Website 
     </title>
   </head>
 
   <body>
     <div class="container">
       <!-- Navigation Area -->
-      <header class="navbar">
+      <header class="navbar" role = "Navigation">
         <!-- Logo -->
         <a href="#top" class="logo"></a>
 
@@ -96,7 +99,7 @@
 
       <main>
         <div id="introduction" class="intro">
-          <h1>Hello</h1>
+          <h1>Kamusta</h1>
           <p>My name is Azrielle Pelayo.</p>
           <p>
             I'm a <span>front-end web developer</span> based in the Philippines.
@@ -128,6 +131,7 @@
             class="contact-form"
             method="post"
             action="mailto:sample_email@sample.com"
+            role = "Send message"
           >
             <ul>
               <li>
@@ -178,7 +182,9 @@
               </li>
             </ul>
 
-            <button type="submit" class="submit-button">Submit</button>
+            <button type="submit" class="submit-button"
+            data-message = 
+            "Click to send your message">Submit</button>
           </form>
         </article>
       </main>
