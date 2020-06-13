@@ -250,6 +250,16 @@ h2 {
   padding-right: .5em;
 }
 
+/*Styling the About Me
+============================ */
+.about p{
+  font-size: 0.8em;
+}
+
+.about p span{
+  color: #8eaebd;
+}
+
 /* Styling the contact part
 ===========================
 .contact {
@@ -324,7 +334,7 @@ footer {
   justify-content: center;
   flex-flow: column wrap;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.6em;
   padding: 1.5em;
   border-top: 1px solid #FFFFFF;
 }
