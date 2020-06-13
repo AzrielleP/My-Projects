@@ -171,7 +171,7 @@ h2 {
 .about,
 .contact {
   position: relative;
-  border-top: 30px solid #000;
+  border-top: 30px solid #000000;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -185,6 +185,7 @@ h2 {
   top: -2px;
   left: 0;
   right: 0;
+  background-color: #000000;
 }
 
 .portfolio,
@@ -397,7 +398,33 @@ For screens larger than 400px
     padding-right: 20vw;
   }
 
-  /* Fixing the contact form inputs */
+  /* Fixing the portfolio area*/
+  .project-container{
+    display: flex;
+  }
+  .firstProject,
+  .secondProject{
+    border-bottom: none;
+    border-right: 1px solid #FFFFFF;
+    margin: 1em 0.3em 1em 0.3em;
+    padding: 0.5em;
+    width: 30vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+  }
+  
+  .thirdProject{
+    margin: 1em 0.3em 1em 0.3em;
+    width: 40vw;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  /*
+  /* Fixing the contact form inputs 
   .contact input, .contact textarea{
       width: 70%;
   }
@@ -410,4 +437,5 @@ For screens larger than 400px
   .submit-button:focus{
       outline: none;
   }
+  */
 }
