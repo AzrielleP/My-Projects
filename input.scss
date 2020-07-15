@@ -1,0 +1,308 @@
+$font-default: 'Roboto', sans-serif;
+$font-head: 'Ubuntu', sans-serif;
+$color-head: #c5c1c0;
+$color-important: #f7ce3e;
+$color-primary: #000000;
+$color-secondary: #1a2930;
+
+/* Universal */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1.7em 1em 1.7em 1.7em;
+}
+
+.article-title {
+  font: 4em $font-head;
+  color: $color-head;
+}
+
+.description {
+  margin: 2.5em 0;
+  padding: 0.5em 1em;
+  border-left: 5px solid #f7ce3e;
+  font: 0.8em/1.5 $font-default;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+a:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 4em;
+  padding: 1em;
+
+  /* Navigation */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    z-index: 2;
+    height: 100vh;
+    padding: 1.5em;
+    background-color: #1a2930da;
+
+    /* Style the transition when clicking the burger or close icon */
+    -webkit-transition: right 0.6s ease;
+    -moz-transition: right 0.6s ease;
+    -ms-transition: right 0.6s ease;
+    -o-transition: right 0.6s ease;
+    transition: right 0.6s ease;
+
+    /* navbar links */
+    .page-links {
+      list-style-type: none;
+      li {
+        font: lighter 1.3em/2.5 $font-default;
+        text-transform: uppercase;
+        a {
+          color: $color-important;
+        }
+        a:focus,
+        a:active {
+          color: $color-head;
+        }
+      }
+    }
+  }
+}
+
+/* Burger Icon - Default*/
+.burger-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 1.8em;
+  width: 2em;
+  z-index: 3;
+  border: 2px solid $color-important;
+  border-radius: 5px;
+  padding: 0.2em;
+
+  /* Burger Icon */
+  .burger-icon,
+  .burger-icon:before,
+  .burger-icon:after {
+    width: 100%;
+    height: 3px;
+    background-color: $color-important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .burger-icon {
+    position: relative;
+  }
+  .burger-icon:before,
+  .burger-icon:after {
+    position: absolute;
+    content: '';
+    top: -7px;
+  }
+  .burger-icon:after {
+    top: 7px;
+  }
+}
+
+/* Navbar expanded */
+nav.expanded {
+  right: 0vw;
+}
+
+.burger-icon-container.expanded {
+  .buger-icon,
+  .burger-icon:after,
+  .burger-icon:before {
+    top: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .burger-icon {
+    background-color: transparent;
+  }
+  .burger-icon:after {
+    transform: rotate(45deg);
+  }
+  .burger-icon:before {
+    transform: rotate(-45deg);
+  }
+}
+
+/* Landing Page */
+.home {
+  height: 100vh;
+  width: 100%;
+  .hello-greeting {
+    margin: 1em 0 0 0;
+    font: 6em $font-head;
+    color: $color-head;
+  }
+  p {
+    font: 1.5em $font-default;
+    color: $color-secondary;
+    .creator-name {
+      color: $color-important;
+    }
+  }
+  .title {
+    font-size: 1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $color-head;
+  }
+}
+
+/* About Page */
+.about {
+  border-top: 5em solid transparent;
+  .skills-container {
+    margin: auto;
+    .skills-title {
+      padding: 0.2em 0;
+      border-bottom: 0.2px solid $color-head;
+      text-align: center;
+      text-transform: uppercase;
+      font: bold 1em $font-head;
+      color: $color-head;
+    }
+    .tech-container,
+    .tools-container {
+      text-align: center;
+      margin: 1em 0;
+    }
+    img {
+      height: 1.5em;
+      margin: 0.2em;
+    }
+  }
+}
+
+/* Portfolio Page */
+.portfolio {
+  border-top: 5em solid transparent;
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 2em;
+
+    .project {
+      display: flex;
+      flex-flow: column;
+      align-content: space-between;
+      justify-content: center;
+      width: 100%;
+      height: 15em;
+      margin: 1em 0;
+      padding: 1.5em;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      .project-title {
+        padding: 0.5em;
+        font: bold 1.5em $font-default;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .project-description {
+        margin: 1em 0;
+        font: 0.8em/1.5 $font-default;
+        text-align: center;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2em;
+        a {
+          text-transform: uppercase;
+          font: bold 1em $font-default;
+        }
+        a:active,
+        a:focus {
+          color: $color-head;
+        }
+        .view-live {
+          color: $color-important;
+        }
+        .view-code {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+/* Contact Page */
+.contact {
+  margin-top: 5em;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: $color-secondary;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  .article-title {
+    color: $color-important;
+  }
+  .description {
+    margin-bottom: 0;
+    border: none;
+    color: $color-head;
+    .email {
+      color: $color-important;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100vw;
+  height: 4em;
+  background-color: $color-primary;
+  p {
+    font: bolder 1em $font-head;
+    text-transform: uppercase;
+    color: $color-important;
+  }
+  i {
+    color: #ffffff;
+    margin-left: 0.5em;
+  }
+}

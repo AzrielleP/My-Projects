@@ -4,264 +4,164 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="Azrielle Pelayo" />
     <meta
       name="description"
       content="Azrielle Pelayo - Front-End Web Developer"
     />
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow%7CBarlow+Semi+Condensed&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <script
-      src="https://kit.fontawesome.com/238576f8e6.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Changing the color of the SVG icon -->
-    <style>
-      .burger,
-      .close {
-        color: #8eaebd;
-      }
-    </style>
+    
+    <!-- JavaScript -->
+    <script src = "index.js" defer></script>
+    <script src="https://kit.fontawesome.com/238576f8e6.js" crossorigin="anonymous"></script>
 
     <title>
-      azrielle | Website
+      azrielle | Front-End Dev
     </title>
   </head>
 
   <body>
+
     <div class="container">
-      <!-- Navigation Area -->
-      <header class="navbar" role="Navigation">
-        <!-- Logo -->
-        <a href="#top" class="logo"></a>
 
-        <!-- Hamburger Menu Icons-->
-        <input type="checkbox" class="burger-toggle" />
+      <!-- Header -->
+      <header>
 
-        <div class="burger-icon">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="bars"
-            class="svg-inline--fa fa-bars fa-w-14 burger"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
-            <path
-              fill="currentColor"
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-            ></path>
-          </svg>
+        <!-- Hamburger Menu Icon-->
 
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="times"
-            class="svg-inline--fa fa-times fa-w-11 close"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 352 512"
-          >
-            <path
-              fill="currentColor"
-              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            ></path>
-          </svg>
+        <div class="burger-icon-container">
+          <div class="burger-icon">
+
+          </div>
         </div>
 
         <!-- Page Links -->
-        <div class="link-container">
+        <nav class="link-container">
           <div>
             <ul class="page-links">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
               <li>
                 <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#about">About Me</a>
-              </li>
-              <li>
                 <a href="#contact">Contact</a>
               </li>
-              <!--<li>
-                <a href="">Resume</a>
-              </li> -->
             </ul>
           </div>
-        </div>
+        </nav>
       </header>
 
       <main>
-        <div id="introduction" class="intro">
-          <h1>Kamusta</h1>
-          <p>My name is Azrielle Pelayo.</p>
-          <p>
-            I'm a <span>front-end web developer</span> based in the Philippines.
+        <!-- Landing Page -->
+        <article class="home">
+          <h1 class = "hello-greeting">Hello.</h1>
+          <p>I'm <span class = "creator-name">Azrielle Pelayo</span>.</p>
+          <p class = "title">
+            A front-end web developer from the Philippines.
           </p>
-        </div>
+        </article>
 
-        <article id="portfolio" class="portfolio">
-          <h2>Portfolio</h2>
-          <div class="project-container">
+        <!-- About Page -->
 
-            <div class="firstProject">
-              <div class="textContent">
-                <h3>Calculator</h3>
-                <p>A simple calculator with interactive buttons. It works on your phone too!</p>
+        <article id="about" class="about">
+          <h1 class = "article-title">About</h1>
+
+          <div class="content-container">
+
+            <p class = "description">
+              Azrielle is a licensed Electronics Engineer who lives in Baguio City. She spends a lot of time teaching herself front-end web development to make a career switch as she enjoys the process of building websites from the ground up.
+            </p>
+
+            <div class="skills-container">
+              <p class = "skills-title">What I know & What I Use</p>
+              <div class="tech-container">
+                <img src = "assets/js-logo.png"/>
+                <img src = "assets/html-logo.png">
+                <img src = "assets/css-logo.png">
+                <img src = "assets/sass-logo.png">
+                <img src = "assets/webpack-logo.png">
+                <img src = "assets/git-logo.png">
+                <img src = "assets/eslint-logo.png"> 
               </div>
-              <div class="toBot">
-                <div class="button-container">
-                  <a href = "http://azriellep.github.io/calculator">View Live</a>
-                  <a href = "https://github.com/AzrielleP/calculator">View Source Code</a>
-                </div>
-                <div class="tools">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js-square"></i>
-                </div>
-              </div>
-            </div>
-            <div class="secondProject">
-              <div class="textContent">
-                <h3>To Do List</h3>
-                <p>
-                  A simple todo list app. This is a work in progress and the layout is only designed for mobile devices. 
-                </p>
-              </div>
-              <div class="toBot">
-                <div class="button-container">
-                  <a href = "http://azriellep.github.io/to-do-list">View Live</a>
-                  <a href = "https://github.com/AzrielleP/to-do-list">View Source Code</a>
-                </div>
-                <div class="tools">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js-square"></i>
-                </div>
-              </div>
-            </div>
-            <div class="thirdProject">
-              <div class="textContent">
-                <h3>Tic Tac Toe</h3>
-                <p>
-                  A tic-tac-toe game that you can play on your browser on any device.
-                </p>
-              </div>
-              <div class="toBot">
-                <div class="button-container">
-                  <a href = "http://azriellep.github.io/tic-tac-toe">View Live</a>
-                  <a href = "https://github.com/AzrielleP/tic-tac-toe">View Source Code</a>
-                </div>
-                <div class="tools">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js-square"></i>
-                </div>
+              <div class="tools-container">
+                <img src = "assets/vscode-logo.png">
+                <img src = "assets/figma-logo.png">
+                <img src = "assets/canva-logo.png">
+                <img src = "assets/notion-logo.png">
+                <img src = "assets/jira-logo.png">
+                <img src = "assets/github-logo.png">
               </div>
             </div>
           </div>
-        </div>
         </article>
 
-        <article id="about" class="about">
-          <h2>About Me</h2>
-          <p>
-            Azrielle is a licensed Electronics Engineer who lives in Baguio City. She spends a lot of time teaching herself front-end web development to make a career switch as she enjoys the process of building websites from the ground up.
-          </p>
-          <br>
-          <p id = "contact">Feel free to contact her at <span>azriellepelayo@gmail.com</p>
+        <!-- Portfolio Page -->
+        <article id="portfolio" class="portfolio">
+          <h1 class = "article-title">Portfolio</h1>
+
+          <div class="project-container">
+
+            <div class="project">
+                <p class = "project-title">Todo List</p>
+                <p class = "project-description">A todo list application built with vanilla JavaScript. It features adding, editing, and deleting projects and tasks. Works on any screen size.</p>
+                <div class="button-container">
+                  <a href = "http://azriellep.github.io/to-do-list" class = "view-live">View Live</a>
+                  <a href = "https://github.com/AzrielleP/to-do-list" class = "view-code">View Code</a>
+                </div>
+            </div>
+
+            <div class="project">
+              <p class = "project-title">Calculator</p>
+              <p class = "project-description">A simple calculator application with interactive buttons. Just vanilla JavaScript.</p>
+              <div class="button-container">
+                <a href = "http://azriellep.github.io/calculator" class = "view-live">View Live</a>
+                <a href = "https://github.com/AzrielleP/calculator" class = "view-code">View Code</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <p class = "project-title">Restaurant Page</p>
+              <p class = "project-description">My take on a sample restaurant page.</p>
+              <div class="button-container">
+                <a href = "http://azriellep.github.io/calculator" class = "view-live">View Live</a>
+                <a href = "https://github.com/AzrielleP/calculator" class = "view-code">View Code</a>
+              </div>
+            </div>
+          </div>  
         </article>
-        <!--
+
         <article id="contact" class="contact">
-          <h2>Contact</h2>
-          <h3>If you need help on your website, feel free to contact me.</h3>
+          <h1 class = "article-title">Contact</h1>
 
-          <form
-            class="contact-form"
-            method="post"
-            action="mailto:sample_email@sample.com"
-            role = "Send message"
-          >
-            <ul>
-              <li>
-                <div>
-                  <label for="name">
-                    Name
-                    <strong>*</strong>
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="First Name and Last Name"
-                  />
-                </div>
-              </li>
-
-              <li>
-                <div>
-                  <label for="email">
-                    Email
-                    <strong>*</strong>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="Enter your Email Address"
-                  />
-                </div>
-              </li>
-
-              <li>
-                <div>
-                  <label for="message">
-                    Message
-                    <strong>*</strong>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    placeholder="Type your message"
-                  ></textarea>
-                </div>
-              </li>
-            </ul>
-
-            <button type="submit" class="submit-button"
-            data-message = 
-            "Click to send your message">Submit</button>
-          </form>
+          <div class="content-container">
+            <p class = "description">
+              Interested in working with me? You can contact me on <span class = "email">azriellepelayo@gmail.com</span>.
+            </p>
         </article>
-      --></main>
-
-      <footer>
-        <p>
-          <a href="https://github.com/AzrielleP" target="_blank">Github</a>
-        </p>
-        <p>
-          The icons used in this site are from
-          <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
-        </p>
-        <p>
-          Photo credits to
-          <a href="https://unsplash.com/@heytowner" target="_blank"
-            >John Towner</a
-          >
-        </p>
-        <p>2020 - Azrielle</p>
-      </footer>
+      </main>
     </div>
+
+    <footer>
+      <p>2020 | Azrielle</p>
+      <div class="profile-container">
+        <a href = "https://www.linkedin.com/in/azriellepelayo/">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href = "https://github.com/AzrielleP">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+
   </body>
 </html>
