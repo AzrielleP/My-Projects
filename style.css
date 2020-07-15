@@ -8,7 +8,7 @@
 }
 
 .container {
-  padding: 1.7em 1em 1.7em 1.7em;
+  padding: 1.7em;
 }
 
 .article-title {
@@ -40,7 +40,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 4em;
   padding: 1em;
   /* Navigation */
@@ -61,6 +61,7 @@ header nav .page-links li {
   text-transform: uppercase;
 }
 header nav .page-links li a {
+  display: block;
   color: #f7ce3e;
 }
 header nav .page-links li a:focus,
@@ -79,7 +80,7 @@ header nav .page-links li a:active {
   width: 100%;
   height: 100%;
   background: #1a2930;
-  transform: skewY(-20deg);
+  transform: skewY(-10deg);
   transform-origin: top left;
 }
 
@@ -88,7 +89,7 @@ header nav .page-links li a:active {
   flex-flow: column;
   align-content: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 .home .hello-greeting {
@@ -119,7 +120,7 @@ header nav .page-links li a:active {
 }
 .about .skills-container .skills-title {
   padding: 0.2em 0;
-  width: 70%;
+  width: 50%;
   margin: auto;
   border-bottom: 0.2px solid #c5c1c0;
   text-align: center;
@@ -133,7 +134,7 @@ header nav .page-links li a:active {
   margin: 1em 0;
 }
 .about .skills-container img {
-  height: 1.5em;
+  height: 3vw;
   margin: 0.2em;
 }
 
@@ -142,20 +143,15 @@ header nav .page-links li a:active {
   border-top: 5em solid transparent;
 }
 .portfolio .project-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
   margin-top: 2em;
 }
 .portfolio .project-container .project {
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
   align-content: space-between;
-  justify-content: center;
-  width: 100%;
-  height: 15em;
-  margin: 1em 0;
+  height: 16em;
+  margin: 1.5em 0;
   padding: 1.5em;
   border-radius: 5px;
   background-color: #ffffff;
@@ -198,6 +194,7 @@ header nav .page-links li a:active {
   border-top: 5em solid transparent;
 }
 .contact .email {
+  font-weight: bolder;
   color: #1a2930;
 }
 
@@ -207,9 +204,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 1em;
-  width: 100vw;
+  width: 100%;
   height: 4em;
-  background-color: #0A1612;
+  background-color: #0a1612;
 }
 footer p {
   font: bolder 1em "Ubuntu", sans-serif;
@@ -221,13 +218,14 @@ footer i {
   margin-left: 0.5em;
 }
 
-/* For larger mobile devices */
-@media screen and (max-width: 600px) {
+/* For small mobile devices */
+@media screen and (max-width: 599px) {
   /* header */
   header nav {
     position: fixed;
     top: 0;
     right: -60vw;
+    padding: 0;
     z-index: 2;
     height: 100vh;
     background-color: #1a2930da;
@@ -307,6 +305,79 @@ footer i {
   }
   .burger-icon-container.expanded .burger-icon:before {
     transform: rotate(-45deg);
+  }
+
+  /* Landing Page */
+  .background {
+    transform: skewY(-20deg);
+  }
+
+  /* About Page */
+  .about .skills-container .skills-title {
+    width: 90%;
+  }
+  .about .skills-container img {
+    height: 8vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  header nav {
+    padding: 0;
+  }
+
+  /* Portfolio Page */
+  .portfolio .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 8em;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 0 12em;
+  }
+
+  /* Hover effects */
+  .page-links li a {
+    font-weight: bold;
+  }
+  .page-links li a:hover {
+    color: #c5c1c0;
+  }
+
+  /* About Page */
+  .about .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about .content-container .description {
+    width: 40%;
+  }
+  .about .content-container .skills-container .skills-title {
+    width: 100%;
+  }
+
+  /* Portfolio Page */
+  .portfolio .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio .project-container .project .button-container a:hover {
+    color: #c5c1c0;
+  }
+
+  /* footer */
+  .profile-container i:hover {
+    color: #f7ce3e;
+  }
+  .profile-container i:active,
+.profile-container i:focus {
+    color: #c5c1c0;
   }
 }
 
