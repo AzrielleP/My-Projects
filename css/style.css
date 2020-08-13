@@ -336,11 +336,6 @@ footer i {
   .container {
     padding: 0 8em;
   }
-}
-@media screen and (min-width: 900px) {
-  .container {
-    padding: 0 12em;
-  }
 
   /* Hover effects */
   .page-links li a {
@@ -363,20 +358,25 @@ footer i {
     width: 100%;
   }
 
-  /* Portfolio Page */
-  .portfolio .project-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .portfolio .project-container .project .button-container a:hover {
-    color: #c5c1c0;
-  }
-
   /* footer */
   .profile-container i:hover {
     color: #f7ce3e;
   }
   .profile-container i:active,
 .profile-container i:focus {
+    color: #c5c1c0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    padding: 0 12em;
+  }
+
+  /* Portfolio Page */
+  .portfolio .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio .project-container .project .button-container a:hover {
     color: #c5c1c0;
   }
 }

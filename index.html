@@ -12,7 +12,7 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
     
@@ -48,10 +48,10 @@
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
@@ -70,6 +70,59 @@
           <p class = "title">
             A front-end web developer from the Philippines.
           </p>
+        </article>
+
+        <!-- Portfolio Page -->
+        <article id="portfolio" class="portfolio">
+          <h1 class = "article-title">Portfolio</h1>
+
+          <div class="project-container">
+
+            <div class="project">
+              <p class = "project-title">Quizzap</p>
+              <p class = "project-description">A quiz application being built with React.js and Sass. It allows the user to answer questions one by one and review his answers before submitting and checking his results. This is a work in progress.</p>
+              <div class="button-container">
+                <a disabled class = "view-live" target = "_blank" style = "visibility: hidden">View Live</a>
+                <a disabled class = "view-code" target = "_blank" style = "visibility: hidden">View Code</a>
+              </div>
+          </div>
+
+            <div class="project">
+                <p class = "project-title">Todo List</p>
+                <p class = "project-description">A todo list application built with vanilla JavaScript. It features adding, editing, and deleting projects and tasks.</p>
+                <div class="button-container">
+                  <a href = "http://azriellep.github.io/to-do-list" class = "view-live" target = "_blank">View Live</a>
+                  <a href = "https://github.com/AzrielleP/to-do-list" class = "view-code" target = "_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="project">
+              <p class = "project-title">Calculator</p>
+              <p class = "project-description">A simple calculator application with interactive buttons. Just vanilla JavaScript.</p>
+              <div class="button-container">
+                <a href = "http://azriellep.github.io/calculator" class = "view-live" target = "_blank">View Live</a>
+                <a href = "https://github.com/AzrielleP/calculator" class = "view-code" target = "_blank">View Code</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <p class = "project-title">Little Den Coffee Shop</p>
+              <p class = "project-description">My take on a multi-page coffee shop restaurant website. Powered by Bootstrap and OpenLayers API.</p>
+              <div class="button-container">
+                <a href = "http://azriellep.github.io/the-little-den" class = "view-live" target = "_blank">View Live</a>
+                <a href = "https://github.com/AzrielleP/the-little-den" class = "view-code" target = "_blank">View Code</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <p class = "project-title">Weather Application</p>
+              <p class = "project-description">A weather app built with the OpenWeatherMap API and vanilla JavaScript.</p>
+              <div class="button-container">
+                <a href = "http://azriellep.github.io/nimbus" class = "view-live" target = "_blank">View Live</a>
+                <a href = "https://github.com/AzrielleP/nimbus" class = "view-code" target = "_blank">View Code</a>
+              </div>
+            </div>
+          </div>  
         </article>
 
         <!-- About Page -->
@@ -93,62 +146,18 @@
                 <img src = "assets/bootstrap-4-logo.png">
                 <img src = "assets/webpack-logo.png">
                 <img src = "assets/git-logo.png">
-                <img src = "assets/eslint-logo.png"> 
               </div>
               <div class="tools-container">
+                <img src = "assets/react-logo.png">
                 <img src = "assets/vscode-logo.png">
                 <img src = "assets/figma-logo.png">
                 <img src = "assets/canva-logo.png">
                 <img src = "assets/notion-logo.png">
                 <img src = "assets/jira-logo.png">
-                <img src = "assets/github-logo.png">
+                <img src = "assets/eslint-logo.png"> 
               </div>
             </div>
           </div>
-        </article>
-
-        <!-- Portfolio Page -->
-        <article id="portfolio" class="portfolio">
-          <h1 class = "article-title">Portfolio</h1>
-
-          <div class="project-container">
-
-            <div class="project">
-                <p class = "project-title">Todo List</p>
-                <p class = "project-description">A todo list application built with vanilla JavaScript. It features adding, editing, and deleting projects and tasks.</p>
-                <div class="button-container">
-                  <a href = "http://azriellep.github.io/to-do-list" class = "view-live" target = "_blank">View Live</a>
-                  <a href = "https://github.com/AzrielleP/to-do-list" class = "view-code" target = "_blank">View Code</a>
-                </div>
-            </div>
-
-            <div class="project">
-              <p class = "project-title">Calculator</p>
-              <p class = "project-description">A simple calculator application with interactive buttons. Just vanilla JavaScript.</p>
-              <div class="button-container">
-                <a href = "http://azriellep.github.io/calculator" class = "view-live" target = "_blank">View Live</a>
-                <a href = "https://github.com/AzrielleP/calculator" class = "view-code" target = "_blank">View Code</a>
-              </div>
-            </div>
-
-            <div class="project">
-              <p class = "project-title">Little Den Coffee Shop</p>
-              <p class = "project-description">My take on a multi-page coffee shop restaurant website. Powered by Bootstrap and OpenLayers API</p>
-              <div class="button-container">
-                <a href = "http://azriellep.github.io/the-little-den" class = "view-live" target = "_blank">View Live</a>
-                <a href = "https://github.com/AzrielleP/the-little-den" class = "view-code" target = "_blank">View Code</a>
-              </div>
-            </div>
-
-            <div class="project">
-              <p class = "project-title">Weather Application</p>
-              <p class = "project-description">A weather app built with the OpenWeatherMap API</p>
-              <div class="button-container">
-                <a href = "http://azriellep.github.io/nimbus" class = "view-live" target = "_blank">View Live</a>
-                <a href = "https://github.com/AzrielleP/nimbus" class = "view-code" target = "_blank">View Code</a>
-              </div>
-            </div>
-          </div>  
         </article>
 
         <article id="contact" class="contact">

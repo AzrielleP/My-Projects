@@ -364,40 +364,52 @@ footer {
   .container {
     padding: 0 8em;
   }
-}
 
-@media screen and (min-width: 900px) {
-  .container {
-    padding: 0 12em;
-  }
-
-  /* Hover effects */
-  .page-links {
-    li {
-      a {
-        font-weight: bold;
-      }
-      a:hover {
-        color: $color-head;
-      }
-    }
-  }
-
-  /* About Page */
-  .about {
-    .content-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      .description {
-        width: 40%;
-      }
-      .skills-container {
-        .skills-title {
-          width: 100%;
+    /* Hover effects */
+    .page-links {
+      li {
+        a {
+          font-weight: bold;
+        }
+        a:hover {
+          color: $color-head;
         }
       }
     }
+  
+    /* About Page */
+    .about {
+      .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .description {
+          width: 40%;
+        }
+        .skills-container {
+          .skills-title {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+      /* footer */
+  .profile-container {
+    i:hover {
+      color: $color-important;
+    }
+    i:active,
+    i:focus {
+      color: $color-head;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    padding: 0 12em;
   }
 
   /* Portfolio Page */
@@ -412,17 +424,6 @@ footer {
         }
       }
       
-    }
-  }
-
-  /* footer */
-  .profile-container {
-    i:hover {
-      color: $color-important;
-    }
-    i:active,
-    i:focus {
-      color: $color-head;
     }
   }
 }
