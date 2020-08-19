@@ -157,7 +157,7 @@ header nav .page-links li a:active {
   color: #1a2930;
 }
 .portfolio .project-container .project .project-title {
-  padding: 0.5em 0;
+  margin: 1em 0;
   font: bold 1.5em "Roboto", sans-serif;
   text-transform: uppercase;
 }
