@@ -153,6 +153,14 @@ header {
     margin-top: 2em;
 
     .project {
+      a {
+        color: $color-secondary;
+      }
+      a:visited, 
+      a:focus,
+      a:active {
+        color: $color-secondary;
+      }
       margin: 1.5em 0;
       .project-title {
         padding: 0.5em 0;
@@ -393,11 +401,6 @@ footer {
     a:hover {
       opacity: 0.8;
       text-decoration: underline;
-    }
-    a:visited, 
-    a:focus,
-    a:active {
-      color: $color-secondary;
     }
     .projectContent {
       display: flex;

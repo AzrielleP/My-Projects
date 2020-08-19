@@ -148,6 +148,14 @@ header nav .page-links li a:active {
 .portfolio .project-container .project {
   margin: 1.5em 0;
 }
+.portfolio .project-container .project a {
+  color: #1a2930;
+}
+.portfolio .project-container .project a:visited,
+.portfolio .project-container .project a:focus,
+.portfolio .project-container .project a:active {
+  color: #1a2930;
+}
 .portfolio .project-container .project .project-title {
   padding: 0.5em 0;
   font: bold 1.5em "Roboto", sans-serif;
@@ -357,11 +365,6 @@ footer i {
   .project a:hover {
     opacity: 0.8;
     text-decoration: underline;
-  }
-  .project a:visited,
-.project a:focus,
-.project a:active {
-    color: #1a2930;
   }
   .project .projectContent {
     display: flex;
