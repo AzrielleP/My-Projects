@@ -142,6 +142,11 @@ header {
     img {
       height: 3vw;
       margin: 0.2em;
+      image-rendering: -moz-crisp-edges; /* Firefox */
+      image-rendering: -o-crisp-edges; /* Opera */
+      image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
     }
   }
 }
@@ -156,7 +161,7 @@ header {
       a {
         color: $color-secondary;
       }
-      a:visited, 
+      a:visited,
       a:focus,
       a:active {
         color: $color-secondary;
@@ -416,7 +421,6 @@ footer {
       }
     }
   }
-
 
   /* footer */
   .profile-container {
