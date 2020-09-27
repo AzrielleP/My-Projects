@@ -264,7 +264,7 @@ footer {
       position: fixed;
       top: 0;
       right: -60vw;
-      padding: 0;
+      padding: 1em;
       z-index: 2;
       height: 100vh;
       background-color: #1a2930da;
@@ -359,6 +359,10 @@ footer {
   /* About Page */
   .skills-title {
     width: 90%;
+  }
+
+  .white-banner {
+    display: none;
   }
 }
 
